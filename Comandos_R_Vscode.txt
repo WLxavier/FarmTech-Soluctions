@@ -1,0 +1,9 @@
+& "C:\Program Files\R\R-4.4.3\bin\R.exe"
+
+setwd("C:/Users/wxsan/OneDrive/Área de Trabalho/Fiap/FarmTech/R")
+
+source("Analise_FarmTech.R")
+
+resultados <- analisar_dados()
+
+resultados <- analisar_dados("../Dados/dados_farmtech.csv")

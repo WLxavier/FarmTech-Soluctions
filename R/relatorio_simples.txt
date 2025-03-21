@@ -1,0 +1,21 @@
+=== RELATÓRIO FARMTECH SOLUTIONS ===
+
+RESUMO POR CULTURA:
+# A tibble: 3 × 8
+  cultura media_area desvio_area media_area_util desvio_area_util media_litros
+  <chr>        <dbl>       <dbl>           <dbl>            <dbl>        <dbl>
+1 Batata         100          NA              95               NA         28.5
+2 Milho        10000           0            9900                0       1881  
+3 Soja         10000           0            9900                0       2722. 
+# ℹ 2 more variables: desvio_litros <dbl>, quantidade_registros <int>
+
+RESUMO POR INSUMO:
+# A tibble: 5 × 6
+  insumo       media_dosagem desvio_dosagem media_litros desvio_litros
+  <chr>                <dbl>          <dbl>        <dbl>         <dbl>
+1 Calcio                  50             NA         495            NA 
+2 Fertilizante           250              0        2475             0 
+3 Fungicida              150             NA        1485            NA 
+4 Herbicida              300              0        1990.         1698.
+5 Inseticida             200             NA        1980            NA 
+# ℹ 1 more variable: quantidade_registros <int>

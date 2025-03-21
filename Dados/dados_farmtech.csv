@@ -1,4 +1,9 @@
 cultura,insumo,area_total,area_util,area_ruas,quantidade_ml_metro,ruas,largura_rua,comprimento_area,total_litros
-Milho,Fertilizante,10000.0,9400.0,600.0,100.0,2,3.0,100.0,940.0
-Soja,Herbicida,31415.926535897932,30515.926535897932,900.0,300.0,3,1.5,200.0,9154.77796076938
-Batata,Herbicida,450.0,330.0,120.0,300.0,2,2.0,30.0,99.0
+Milho,Herbicida,10000.0,9900.0,100.0,300.0,1,1.0,100.0,2970.0
+Milho,Fertilizante,10000.0,9900.0,100.0,250.0,1,1.0,100.0,2475.0
+Milho,Inseticida,10000.0,9900.0,100.0,200.0,1,1.0,100.0,1980.0
+Milho,Fungicida,10000.0,9900.0,100.0,150.0,1,1.0,100.0,1485.0
+Soja,Herbicida,10000.0,9900.0,100.0,300.0,1,1.0,100.0,2970.0
+Batata,Herbicida,100.0,95.0,5.0,300.0,1,1.0,5.0,28.5
+Soja,Fertilizante,10000.0,9900.0,100.0,250.0,1,1.0,100.0,2475.0
+Milho,Calcio,10000.0,9900.0,100.0,50.0,1,1.0,100.0,495.0

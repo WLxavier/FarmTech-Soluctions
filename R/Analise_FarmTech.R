@@ -16,8 +16,11 @@ analisar_culturas <- function(dados) {
     group_by(cultura) %>%
     summarise(
       media_area = mean(area_total, na.rm = TRUE),
+      desvio_area = sd(area_total, na.rm = TRUE),
       media_area_util = mean(area_util, na.rm = TRUE),
+      desvio_area_util = sd(area_util, na.rm = TRUE),
       media_litros = mean(total_litros, na.rm = TRUE),
+      desvio_litros = sd(total_litros, na.rm = TRUE),
       quantidade_registros = n()
     )
   
@@ -26,13 +29,15 @@ analisar_culturas <- function(dados) {
   return(resumo_culturas)
 }
 
-# analise dos insulmos
+# analise dos insumos
 analisar_insumos <- function(dados) {
   resumo_insumos <- dados %>%
     group_by(insumo) %>%
     summarise(
       media_dosagem = mean(quantidade_ml_metro, na.rm = TRUE),
+      desvio_dosagem = sd(quantidade_ml_metro, na.rm = TRUE),
       media_litros = mean(total_litros, na.rm = TRUE),
+      desvio_litros = sd(total_litros, na.rm = TRUE),
       quantidade_registros = n()
     )
   print("Resumo por insumo:")
@@ -82,7 +87,7 @@ criar_relatorio <- function(resumo_culturas, resumo_insumos, arquivo = "relatori
 }
 
 # Função para executar as analises jnt
-analisar_dados <- function(arquivo = "dados_farmtech.csv") {
+analisar_dados <- function(arquivo = "../Dados/dados_farmtech.csv") {
   dados <- ler_dados(arquivo)
   if (is.null(dados)) return()
   
